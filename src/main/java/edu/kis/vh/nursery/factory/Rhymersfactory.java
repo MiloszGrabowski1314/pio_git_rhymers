@@ -8,8 +8,8 @@ import edu.kis.vh.nursery.DefaultNumberRhyming;
         
         public DefaultNumberRhyming GetFalseRhymer();
         
-        public DefaultNumberRhyming GetFIFORhymer();
+        public DefaultNumberRhyming GetFirstInFirstOutRhyming();
         
-        public DefaultNumberRhyming GetHanoiRhymer();
+        public DefaultNumberRhyming GetHanoiRhyming();
         
     }

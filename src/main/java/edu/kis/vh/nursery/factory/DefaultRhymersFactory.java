@@ -18,12 +18,12 @@ public class DefaultRhymersFactory implements Rhymersfactory {
     }
 
     @Override
-    public DefaultNumberRhyming GetFIFORhymer() {
+    public DefaultNumberRhyming GetFirstInFirstOutRhyming() {
         return new FirstInFirstOutRhyming();
     }
 
     @Override
-    public DefaultNumberRhyming GetHanoiRhymer() {
+    public DefaultNumberRhyming GetHanoiRhyming() {
         return new HanoiRhyming();
     }
 

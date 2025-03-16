@@ -11,7 +11,7 @@ class RhymersDemo {
         Rhymersfactory factory = new DefaultRhymersFactory();
         
         DefaultNumberRhyming[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
-                factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
+                factory.GetFirstInFirstOutRhyming(), factory.GetHanoiRhyming()};
         
         for (int i = 1; i < 15; i++)
             for (int j = 0; j < 3; j++)
