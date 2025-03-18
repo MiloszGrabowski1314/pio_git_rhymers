@@ -8,7 +8,7 @@ public class DefaultNumberRhyming {
 
 	private static final int EMPTY_INDEX = -1;
 
-	private int[] NUMBERS = new int[CAPACITY];
+	private final int[] NUMBERS = new int[CAPACITY];
 
     public int total = EMPTY_INDEX;
 
