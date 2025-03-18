@@ -2,9 +2,15 @@ package edu.kis.vh.nursery;
 
 public class DefaultNumberRhyming {
 
-    private int[] NUMBERS = new int[12];
+    private static final int CAPACITY = 12;
 
-    public int total = -1;
+	private static final int FULL_INDEX = 11;
+
+	private static final int EMPTY_INDEX = -1;
+
+	private final int[] NUMBERS = new int[CAPACITY];
+
+    public int total = EMPTY_INDEX;
 
     public void countIn(int in) {
         if (!isFull())
@@ -12,22 +18,22 @@ public class DefaultNumberRhyming {
     }
 
         public boolean callCheck() {
-            return total == -1;
+            return total == EMPTY_INDEX;
         }
         
             public boolean isFull() {
-                return total == 11;
+                return total == FULL_INDEX;
             }
         
                 protected int peekaboo() {
                     if (callCheck())
-                        return -1;
+                        return EMPTY_INDEX;
                     return NUMBERS[total];
                 }
             
                     public int countOut() {
                         if (callCheck())
-                            return -1;
+                            return EMPTY_INDEX;
                         return NUMBERS[total--];
                     }
 

@@ -7,7 +7,8 @@ public class HanoiRhyming extends DefaultNumberRhyming {
     public int reportRejected() {
         return totalRejectedCount;
     }
-
+    
+    @Override
     public void countIn(int in) {
         if (!callCheck() && in > peekaboo())
             totalRejectedCount++;
