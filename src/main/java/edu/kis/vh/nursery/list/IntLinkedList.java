@@ -9,10 +9,6 @@ public class IntLinkedList {
         return last;
     }
 
-    public void setLast(Node last) {
-        this.last = last;
-    }
-
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -25,10 +21,6 @@ public class IntLinkedList {
 
     private boolean isEmpty() {
         return last == null;
-    }
-
-    private boolean isFull() {
-        return false;
     }
 
     public int top() {
