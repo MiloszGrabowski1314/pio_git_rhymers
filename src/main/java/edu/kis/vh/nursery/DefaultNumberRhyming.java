@@ -12,6 +12,10 @@ public class DefaultNumberRhyming {
 
     private int total = EMPTY_INDEX;
 
+    public int getTotal() {
+        return total;
+    }
+
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
