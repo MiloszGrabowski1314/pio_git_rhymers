@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class FirstInFirstOutRhyming extends DefaultNumberRhyming {
 
-    public final DefaultNumberRhyming temp = new DefaultNumberRhyming();
+    private final DefaultNumberRhyming temp = new DefaultNumberRhyming();
     
     @Override
     public int countOut() {
